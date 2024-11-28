@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loja de Carros</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Banner inicial -->
+    <header>
+        <img src="banner-imagem.jpg" alt="Banner da Loja de Carros" id="banner-imagem">
+    </header>
+
+    <!-- Menu -->
+    <nav>
+        <ul>
+            <li><a href="#quem-somos">Quem somos</a></li>
+            <li><a href="#contato">Contato</a></li>
+        </ul>
+    </nav>
+
+    <div id="container">
+        <!-- Filtro -->
+        <div id="filtros">
+            <h3>Qual carro você procura?</h3>
+            <form id="filtro-form">
+                <label for="modelo">Modelo</label>
+                <select id="modelo" name="modelo">
+                    <option value="">Todos</option>
+                    <option value="Fusca">Fusca</option>
+                    <option value="Gol">Gol</option>
+                    <option value="Civic">Civic</option>
+                </select>
+
+                <label for="marca">Marca</label>
+                <select id="marca" name="marca">
+                    <option value="">Todas</option>
+                    <option value="Volkswagen">Volkswagen</option>
+                    <option value="Honda">Honda</option>
+                </select>
+
+                <label for="ano">Ano</label>
+                <select id="ano" name="ano">
+                    <option value="">Todos</option>
+                    <option value="2020">2020</option>
+                    <option value="2021">2021</option>
+                </select>
+
+                <label for="preco">Preço</label>
+                <select id="preco" name="preco">
+                    <option value="">Todos</option>
+                    <option value="10000">Até R$ 10.000</option>
+                    <option value="30000">Até R$ 30.000</option>
+                </select>
+
+                <label for="cambio">Câmbio</label>
+                <select id="cambio" name="cambio">
+                    <option value="">Todos</option>
+                    <option value="Manual">Manual</option>
+                    <option value="Automático">Automático</option>
+                </select>
+
+                <button type="submit">Filtrar</button>
+            </form>
+        </div>
+
+        <!-- Carros em Destaque -->
+        <div class="carros-destaque">
+            <!-- Exemplo de carro, será dinâmico -->
+        </div>
+        <!-- Botões de navegação -->
+            <button id="botao-anterior" class="botao-navegacao anterior" style="display: none;">Anterior</button>
+            <button id="botao-proximo" class="botao-navegacao">Próximo</button>
+
+    </div>
+
+    <!-- Popup de detalhes -->
+    <div id="popup-detalhes">
+        <div class="popup-content">
+            <h2>Detalhes do Carro</h2>
+            <div id="imagem-carro-modal">
+                <img src="" alt="Imagem do Carro" id="imagem-carro">
+            </div>
+            <p id="detalhes-carro"></p>
+            <p id="informacoes-adicionais">
+                Gostaria de ter maiores informações sobre esse carro? 
+                <a href="mailto:contato@lojadecarros.com?subject=Informações sobre o carro">
+                    Clique aqui
+                </a>
+            </p>
+            <button id="fechar-popup">Fechar</button>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+
+    <!-- Botões de navegação (anterior e próximo) -->
+<button class="botao-navegacao" id="botao-anterior">◁</button>
+<button class="botao-navegacao" id="botao-proximo">▷</button>
+</body>
+</html>
